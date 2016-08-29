@@ -1,8 +1,8 @@
 Assuntas Passion Project
 
-1. Map out Schema
+1. Map out Schema - done
 
-2. Map out UserFlows
+2. Map out UserFlows - done
 
 3. Implement User Authentication in Sinatra
 
