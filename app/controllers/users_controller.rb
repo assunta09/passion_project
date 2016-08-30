@@ -5,7 +5,6 @@ end
 
 # Create new user
 post '/users' do
-  p "## **** ##" * 10
   if params[:password_confirmation] == params[:user][:password]
     @user = User.new(params[:user])
     if @user.save
@@ -21,6 +20,7 @@ end
 # Profile Page
 get '/users/:id' do
   @user = User.find(params[:id])
+  @hidden_places = HiddenPlace.joins(:users).where("users.id = ?", @user.id)
   erb :'users/show'
 end
 

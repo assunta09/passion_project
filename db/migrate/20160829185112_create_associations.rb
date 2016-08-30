@@ -2,7 +2,7 @@ class CreateAssociations < ActiveRecord::Migration
   def change
     # user_places
     add_reference :user_places, :user
-    add_reference :user_places, :place
+    add_reference :user_places, :hidden_place
 
     # locations
     add_reference :locations, :country
