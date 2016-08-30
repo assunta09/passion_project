@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
   include BCrypt
 
+  has_many :user_places
+  has_many :hidden_places, through: :user_places
+
   validates :name, :email, presence: true
 
   def password
