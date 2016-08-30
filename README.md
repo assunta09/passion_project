@@ -10,3 +10,11 @@ Assuntas Passion Project
 
 5. Find API
 http://www.programmableweb.com/apis/directory
+
+6. Style the website
+
+7. To dos:
+- make certain fields required
+- the email address must be unique
+- have a bigger form field for the description
+- ensure that proper email and url is entered

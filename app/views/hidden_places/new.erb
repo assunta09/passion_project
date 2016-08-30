@@ -1,0 +1,29 @@
+<div>
+  <h1>Add a hidden place to your collection</h1>
+
+  <form action='/hidden_places' method="POST">
+    <label>Please enter a title for your hidden place</label>
+    <input type="text" name="hidden_place[title]"></br></br>
+
+    <label>Why is the place that you would visit again</label>
+    <input type="text" name="hidden_place[description]"></br></br>
+
+    <label>Past a Url to your hidden place (if available)</label>
+    <input type="text" name="hidden_place[url]"></br></br>
+
+    <label>Please tell us the address</label>
+    <input type="text" name="hidden_place[url]"></br></br>
+
+    <label>Please select a category</label>
+      <select name="hidden_place[category_id]">
+        <% @categories.each do |category| %>
+          <option value='<%=category.id %>'> <%= category.category_name %></option>
+        <% end %>
+      </select>
+    </br></br>
+
+    <input type="submit" name="Add to travel log"></br></br>
+
+    </form>
+
+</div>
