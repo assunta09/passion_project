@@ -1,19 +1,21 @@
 <div>
 	<h1>Register</h1>
 
+	<form action='/users' method="POST">
+    <label>Please enter your Name</label>
+		<input type="text" name="user[name]"></br></br>
 
-	<form action="" method="POST">
-		
+    <label>Please enter your Email Address</label>
+    <input type="text" name="user[email]"></br></br>
 
+    <label>Please enter a Password</label>
+    <input type="password" name="user[password]"></br></br>
 
+    <label>Please confirm your Password</label>
+    <input type="password" name="password_confirmation"></br></br>
 
+    <input type="submit" name="Register">
 
 	</form>
-
-
-
-
-
-
 
 </div>
