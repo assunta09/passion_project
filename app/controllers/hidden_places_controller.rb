@@ -9,9 +9,11 @@ end
 
 
 post '/hidden_places' do
-  p "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"*4
-  p params[:user_input_autocomplete_address]
+  # p "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"*4
+  # p params[:other]
   @hidden_place = HiddenPlace.new(params[:hidden_place])
+  @location = Location.new(params[:location])
+  @hidden_place.location = @location
   if @hidden_place.save
     @new_entry = UserPlace.create(hidden_place_id: @hidden_place.id, user_id: current_user.id)
     redirect "/users/#{current_user.id}"

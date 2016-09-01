@@ -1,18 +1,19 @@
 <% if current_user %>
   <ul class="header_bar">
     <li class="header_list">
-      <a class="header_link" href="/users/<%= @current_user.id %> ">Profile Page</a>
+      <a href="/users/<%= @current_user.id %> ">Profile Page</a>
     </li>
     <li class="header_list">
       <form action="/sessions" method="POST">
         <input type="hidden" name="_method" value="DELETE">
-        <input id="logout" type="submit" value="Logout">
+        <button id="logout" type="submit">Logout
+        </button>
       </form>
     </li>
   </ul>
 <% else %>
   <ul class="header_bar">
-  <li class="header_list"> <a class="header_link" href="/sessions/new">Login</a></li>
-  <li class="header_list"> <a class="header_link" href="/users/new">Register</a></li>
+  <li class="header_list"> <a href="/sessions/new">Login</a></li>
+  <li class="header_list"> <a href="/users/new">Register</a></li>
   </ul>
 <% end %>
