@@ -9,6 +9,8 @@ end
 
 
 post '/hidden_places' do
+  p "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"*4
+  p params[:user_input_autocomplete_address]
   @hidden_place = HiddenPlace.new(params[:hidden_place])
   if @hidden_place.save
     @new_entry = UserPlace.create(hidden_place_id: @hidden_place.id, user_id: current_user.id)

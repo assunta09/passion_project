@@ -11,9 +11,12 @@ Assuntas Passion Project
 5. Find API
 http://www.programmableweb.com/apis/directory
 
-6. Style the website
+6. Get the API to work:
+https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
 
-7. To dos:
+7. Style the website
+
+8. To dos:
 - make certain fields required
 - the email address must be unique
 - have a bigger form field for the description
