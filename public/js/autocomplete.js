@@ -1,13 +1,3 @@
-// var componentForm = {
-//   street_number: 'short_name',
-//   route: 'long_name',
-//   locality: 'long_name',
-//   administrative_area_level_1: 'short_name',
-//   country: 'long_name',
-//   postal_code: 'short_name'
-// };
-
-
 // Initializ autocomplete
 function initializeAutocomplete(id) {
   var element = document.getElementById(id);
@@ -17,31 +7,32 @@ function initializeAutocomplete(id) {
   }
 }
 
+var componentForm = {
+  street_number: 'short_name',
+  street_name: 'long_name',
+  locality: 'long_name',
+  administrative_area_level_1: 'short_name',
+  country: 'long_name',
+  postal_code: 'short_name'
+};
+
 function getAddress() {
   var place = this.getPlace();
-  console.log(place);
-  // for (var component in componentForm) {
-  //   document.getElementById(component).value = '';
-  //   document.getElementById(component).disabled = false;
+  // var addressType = place.address_components[2].types[0];
+  // console.log(place.address_components[2][componentForm[addressType]]);
+  // $('input[name="hidden_place[address]"]').val(place.formatted_address)
+  // $('input[name="hidden_place[city]"]').val(place.address_components[1][componentForm[addressType]]);
+
+  //  for (var i = 0; i < place.address_components.length; i++) {
+  //   var addressType = place.address_components[i].types[0];
+  //   var addressValue = place.address_components[i][componentForm[addressType]]
+  //   if (componentForm[addressType]) {
+  //     // console.log(place.address_components[i][componentForm[addressType]]);
+  //     $('input[name="other['+ addressType +']"]').val(addressValue);
+  //   }
   // }
 }
 
-
-
-// function onPlaceChanged() {
-//   var place = this.getPlace();
-//   console.log(place);  // Uncomment this line to view the full object returned by Google API.
-
-//   // for (var i in place.address_components) {
-//   //   var component = place.address_components[i];
-//   //   for (var j in component.types) {  // Some types are ["country", "political"]
-//   //     var type_element = document.getElementById(component.types[j]);
-//   //     if (type_element) {
-//   //       type_element.value = component.long_name;
-//   //     }
-//   //   }
-//   // }
-// }
 
 
 // Event listener starts up upon loading of image
