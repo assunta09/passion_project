@@ -1,0 +1,36 @@
+.form_container {
+  margin: auto;
+  width: 40%;
+  padding-top: 60px;
+}
+
+.form_lables {
+  margin: auto;
+  width: 35%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.submit_button {
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+textarea {
+  width: 168px;
+  height: 100px;
+
+}
+
+label {
+  width: 70%;
+  float: left;
+  text-align: center
+}
+
+input {
+  width: 25%;
+  float: right;
+  font-size: 150%;
+}
