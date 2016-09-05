@@ -1,15 +1,22 @@
-<div>
-  <h1>Welcome <%= @user.name %> </h1>
-  <p> <a href="/hidden_places/new">Add a new place</a>
-  <p> These are your hidden places: </p>
-  <table>
-    <% @hidden_places.each do |hidden_place| %>
-      <tr><th id=display_place>
-        <%= hidden_place.title %> </br>
-<!--         <%= hidden_place.description %> </br>
-        <%= hidden_place.location %> </br>
-        <%= hidden_place.url %> </br> -->
-      </th></tr>
-    <%end%>
-  </table>
+<div class="container">
+   <div class="headline-container">
+    <h1>Hidden Places</h1>
+    <h2>Welcome <%= @user.name %></h2>
+  </div>
+
+  <div>
+    <p> <a href="/hidden_places/new">Add a new place</a>
+  <div class="display-container">
+    <p> These are your hidden places: </p>
+    <table>
+      <% @hidden_places.each do |hidden_place| %>
+        <tr><td id=display_place>
+          <%= hidden_place.title %> </br>
+          <%= hidden_place.description %> </br>
+          <%= hidden_place.location.location_name %> </br>
+          <a href='<%= hidden_place.url %>'><%= hidden_place.url %></br>
+        </td></tr>
+      <%end%>
+    </table>
+  </div>
 </div>

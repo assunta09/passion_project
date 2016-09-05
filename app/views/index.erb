@@ -1,13 +1,10 @@
 <script type="text/javascript" src="/js/index_page.js"></script>
 
 <div class="container">
-  <div class="header_picture">
-    <img src="images/IMG_5100.JPG" alt="beautiful view">
+  <div class="headline-container">
+    <h1>Hidden Places</h1>
+    <h2>Get travel insides for your next holiday</h2>
   </div>
-
-  <h1>Hidden Places</h1>
-
-  <h2>Get travel insides for your next holiday</h2>
 
   <ul class="index_tabs">
     <li class="active"><a href="#hidden_spot">Find a hidden spot</a></li>
@@ -16,7 +13,29 @@
 
 
   <div class="tab_content" id="hidden_spot">
-    <p>SEARCH FOR</p>
+    <div>
+    <table class="display-table">
+    <tr><th class="category_container">Category</th>
+    <th class="information_container">Information</th>
+    <th class="country_container">Country</th>
+      <% @hidden_places.each do |hidden_place| %>
+        <tr class="table-content">
+          <td class="category_container">
+            <%= hidden_place.category.category_name %>
+          </td>
+          <td class="information_container">
+             <span class="title"><%= hidden_place.title %></span> </br>
+              <%= hidden_place.description %> </br>
+              <%= hidden_place.location.location_name %> </br>
+              <a href='<%= hidden_place.url %>'><%= hidden_place.url %></br>
+          </td>
+          <td class="country_container">
+            <%= hidden_place.location.country.country_name %>
+          </td>
+        </tr>
+      <%end%>
+    </table>
+    </div>
   </div>
 
   <div class="tab_content" id="register">

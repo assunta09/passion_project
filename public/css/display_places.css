@@ -1,0 +1,33 @@
+.display-table {
+  padding-top: 40px;
+}
+
+.display-table th {
+  text-align: center
+  background-color: #d3d3d3;
+}
+
+.category_container {
+  padding: 20px;
+  width: 20%;
+  text-align: center
+}
+
+.information_container {
+  padding: 20px;
+  width: 58%;
+}
+
+.country_container {
+  padding: 20px;
+  width: 20%;
+  text-align: center
+}
+
+.title {
+  font-weight: bold;
+}
+
+.table-content {
+  border-top: #d3d3d3 0.5px solid;
+}
