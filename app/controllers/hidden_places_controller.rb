@@ -1,7 +1,11 @@
 get '/hidden_places/new' do
   if logged_in?
     @categories = Category.all
-    erb :'hidden_places/new'
+    if request.xhr?
+      erb :'hidden_places/_add_place', layout: false
+    else
+      erb :'hidden_places/new'
+    end
   else
     redirect '/sessions/new'
   end

@@ -3,7 +3,13 @@ $(document).ready(function() {
   $('div.tab_content#hidden_spot').show();
   //When somebody clicks on the tab (they are not clicking on the li they are
   // clicking on the a)
-  $('.index_tabs a').click(function(event) {
+  clickTab();
+
+});
+
+
+function clickTab() {
+    $('.index_tabs a').click(function(event) {
     // we delete the active class from all li tags
       $('.index_tabs li').removeClass('active');
       // then we access the parent of the a tag that was clicked on
@@ -14,8 +20,18 @@ $(document).ready(function() {
       $('.tab_content').hide();
       $('div.tab_content' + selected).show();
       if (selected === '#register') {
-        $("#register").load("/users/new #registration_container");
+        personalTab();
       }
   })
+}
 
-});
+function personalTab() {
+  $.ajax({
+    url: '/sessions/new',
+    method: 'GET'
+  }).done(function(result){
+    console.log(result);
+    $(".user-container").append(result);
+  })
+  // $("#register").load("/users/new #registration_container");
+}
