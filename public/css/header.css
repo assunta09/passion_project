@@ -1,6 +1,6 @@
 header {
   background-color: #002800;
-  color: #fdfdf7 ;
+  color: #fffff7 ;
   height: 52px;
   width: 100%;
 }
@@ -32,7 +32,7 @@ header li a {
 
 .header_list a {
   text-decoration: none;
-  color: #fdfdf7;
+  color: #fffff7;
   align-items: center;
 }
 

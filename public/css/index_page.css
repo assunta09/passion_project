@@ -1,4 +1,4 @@
-.header_picture {
+/*.header_picture {
 
 }
 
@@ -9,7 +9,7 @@
   margin: 0 auto;
   display: block;
   overflow: hidden;
-}
+}*/
 
 .tab_content {
   display: none;
@@ -17,7 +17,7 @@
 
 .index_tabs {
     float: left;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1.5px solid #002800;
     width: 100%;
     margin-bottom: 16px;
     list-style: none;
@@ -31,12 +31,12 @@
     line-height: 30px;
 }
 .index_tabs li a {
-    color: #666;
+    color: #002800;
     text-decoration: none;
 }
 
 .index_tabs li.active {
-    border: 1px solid #ccc;
+    border: 1.5px solid #002800;
     border-bottom: 1px solid white;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;

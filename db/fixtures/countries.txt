@@ -1,203 +1,245 @@
-Afghanistan
-Albania
-Algeria
 Andorra
-Angola
+United Arab Emirates
+Afghanistan
 Antigua and Barbuda
-Argentina
+Anguilla
+Albania
 Armenia
-Aruba
-Australia
+Netherlands Antilles
+Angola
+Antarctica
+Argentina
+American Samoa
 Austria
+Australia
+Aruba
 Azerbaijan
-Bahamas, The
-Bahrain
-Bangladesh
-Barbados
-Belarus
-Belgium
-Belize
-Benin
-Bhutan
-Bolivia
 Bosnia and Herzegovina
-Botswana
-Brazil
-Brunei
-Bulgaria
+Barbados
+Bangladesh
+Belgium
 Burkina Faso
-Burma
+Bulgaria
+Bahrain
 Burundi
-Cambodia
-Cameroon
+Benin
+Bermuda
+Brunei
+Bolivia
+Brazil
+Bahamas
+Bhutan
+Bouvet Island
+Botswana
+Belarus
+Belize
 Canada
-Cabo Verde
+Cocos Islands
+Congo
 Central African Republic
-Chad
+Congo
+Switzerland
+Côte d'Ivoire
+Cook Islands
 Chile
+Cameroon
 China
 Colombia
-Comoros
-Congo
 Costa Rica
-Cote d'Ivoire
-Croatia
 Cuba
-Curacao
+Cape Verde
+Christmas Island
 Cyprus
 Czech Republic
-Denmark
+Germany
 Djibouti
+Denmark
 Dominica
 Dominican Republic
-East Timor
+Algeria
 Ecuador
-Egypt
-El Salvador
-Equatorial Guinea
-Eritrea
 Estonia
+Egypt
+Western Sahara
+Eritrea
+Spain
 Ethiopia
-Fiji
 Finland
+Fiji
+Falkland Islands
+Micronesia
+Faroe Islands
 France
 Gabon
-Gambia, The
-Georgia
-Germany
-Ghana
-Greece
+United Kingdom
 Grenada
-Guatemala
+Georgia
+French Guiana
+Guernsey
+Ghana
+Gibraltar
+Greenland
+Gambia
 Guinea
+Guadeloupe
+Equatorial Guinea
+Greece
+South Georgia and the South Sandwich Islands
+Guatemala
+Guam
 Guinea-Bissau
-Guya
-Haiti
-Holy See
-Honduras
+Guyana
+Gaza Strip
 Hong Kong
+Heard Island and McDonald Islands
+Honduras
+Croatia
+Haiti
 Hungary
-Iceland
-India
 Indonesia
-Iran
-Iraq
 Ireland
 Israel
+Isle of Man
+India
+British Indian Ocean Territory
+Iraq
+Iran
+Iceland
 Italy
+Jersey
 Jamaica
-Japan
 Jordan
-Kazakhstan
+Japan
 Kenya
-Kiribati
-Korea, North
-Korea, South
-Kosovo
-Kuwait
 Kyrgyzstan
+Cambodia
+Kiribati
+Comoros
+Saint Kitts and Nevis
+North Korea
+South Korea
+Kuwait
+Cayman Islands
+Kazakhstan
 Laos
-Latvia
 Lebanon
-Lesotho
-Liberia
-Libya
+Saint Lucia
 Liechtenstein
+Sri Lanka
+Liberia
+Lesotho
 Lithuania
 Luxembourg
-Macau
-Macedonia
-Madagascar
-Malawi
-Malaysia
-Maldives
-Mali
-Malta
-Marshall Islands
-Mauritania
-Mauritius
-Mexico
-Micronesia
-Moldova
-Monaco
-Mongolia
-Montenegro
+Latvia
+Libya
 Morocco
+Monaco
+Moldova
+Montenegro
+Madagascar
+Marshall Islands
+Macedonia
+Mali
+Myanmar
+Mongolia
+Macau
+Northern Mariana Islands
+Martinique
+Mauritania
+Montserrat
+Malta
+Mauritius
+Maldives
+Malawi
+Mexico
+Malaysia
 Mozambique
 Namibia
-Nauru
-Nepal
-Netherlands
-Netherlands Antilles
-New Zealand
-Nicaragua
+New Caledonia
 Niger
+Norfolk Island
 Nigeria
-North Korea
+Nicaragua
+Netherlands
 Norway
+Nepal
+Nauru
+Niue
+New Zealand
 Oman
-Pakistan
-Palau
-Palestinian Territories
 Panama
-Papua New Guinea
-Paraguay
 Peru
+French Polynesia
+Papua New Guinea
 Philippines
+Pakistan
 Poland
+Saint Pierre and Miquelon
+Pitcairn Islands
+Puerto Rico
+Palestinian Territories
 Portugal
+Palau
+Paraguay
 Qatar
+Réunion
 Romania
+Serbia
 Russia
 Rwanda
-Saint Kitts and Nevis
-Saint Lucia
-Saint Vincent and the Grenadines
-Samoa
-San Marino
-Sao Tome and Principe
 Saudi Arabia
-Senegal
-Serbia
-Seychelles
-Sierra Leone
-Singapore
-Sint Maarten
-Slovakia
-Slovenia
 Solomon Islands
-Somalia
-South Africa
-South Korea
-South Sudan
-Spain
-Sri Lanka
+Seychelles
 Sudan
-Suriname
-Swaziland
 Sweden
-Switzerland
+Singapore
+Saint Helena
+Slovenia
+Svalbard and Jan Mayen
+Slovakia
+Sierra Leone
+San Marino
+Senegal
+Somalia
+Suriname
+São Tomé and Príncipe
+El Salvador
 Syria
-Taiwan
-Tajikistan
-Tanzania
-Thailand
+Swaziland
+Turks and Caicos Islands
+Chad
+French Southern Territories
 Togo
-Tonga
-Trinidad and Tobago
-Tunisia
-Turkey
+Thailand
+Tajikistan
+Tokelau
+Timor-Leste
 Turkmenistan
+Tunisia
+Tonga
+Turkey
+Trinidad and Tobago
 Tuvalu
-Uganda
+Taiwan
+Tanzania
 Ukraine
-United Arab Emirates
-United Kingdom
+Uganda
+U.S. Minor Outlying Islands
+United States
 Uruguay
 Uzbekistan
-Vanuatu
+Vatican City
+Saint Vincent and the Grenadines
 Venezuela
+British Virgin Islands
+U.S. Virgin Islands
 Vietnam
+Vanuatu
+Wallis and Futuna
+Samoa
+Kosovo
 Yemen
+Mayotte
+South Africa
 Zambia
 Zimbabwe

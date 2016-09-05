@@ -1,29 +1,24 @@
-<div class="container">
-   <div class="headline-container">
-    <h1>Hidden Places</h1>
-    <h2>Add a hidden place to your collection</h2>
-  </div>
-
-  <form class="form_container" action='/hidden_places' method="POST">
+<form class="form_container" action='/hidden_places' method="POST">
     <div class="form_entries">
      <label class="label-container">Title of your hidden place</label>
      <input type="text" name="hidden_place[title]">
     </div>
+
     <div class="form_entries">
      <label class="label-container">Why is this place special?</label>
      <input type="text" name="hidden_place[description]"></br></br>
     </div>
+
     <div class="form_entries">
      <label class="label-container">URL (if available)</label>
      <input type="text" name="hidden_place[url]"></br></br>
     </div>
+
     <div class="form_entries">
       <label class="label-container">Address of the place</label>
       <input type="text" id="user_input_autocomplete_address" name="location[location_name]">
     </div>
 
-<!--     <label>Street name</label>
-    <input type="hidden" id="street_name" name="location[street_name]"></br></br> -->
     <div class="form_entries">
       <label>Please select a category</label>
         <select class="drop-down" name="hidden_place[category_id]">
@@ -34,14 +29,9 @@
     </div>
 
     <div class="submit-button">
-     <input type="submit" name="Add to travel log"></br></br>
+      <input type="submit" name="Add to travel log"></br></br>
     </div>
-    </form>
+</form>
 
-</div>
 
-<!-- Include Google Maps JS API -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBP0OO_8dfKuhKGtRk_PVtBudd8ZG2qbpk "></script>
 
-<!-- Custom JS code to bind to Autocomplete API -->
-<script type="text/javascript" src="/js/autocomplete.js"></script>

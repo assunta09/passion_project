@@ -1,15 +1,53 @@
-<div>
-  <h1>Welcome <%= @user.name %> </h1>
-  <p> <a href="/hidden_places/new">Add a new place</a>
-  <p> These are your hidden places: </p>
-  <table>
-    <% @hidden_places.each do |hidden_place| %>
-      <tr><th id=display_place>
-        <%= hidden_place.title %> </br>
-<!--         <%= hidden_place.description %> </br>
-        <%= hidden_place.location %> </br>
-        <%= hidden_place.url %> </br> -->
-      </th></tr>
-    <%end%>
-  </table>
+<script type="text/javascript" src="/js/profile_page.js"></script>
+
+
+<div class="container">
+  <div class="headline-container">
+    <h1>Hidden Places</h1>
+    <h2>Welcome <%= @user.name %></h2>
+  </div>
+
+  <ul class="index_tabs">
+    <li class="active"><a href="#your_places">Your hidden places</a></li>
+    <li><a href="#add_spot">Add a new spot</a></li>
+  </ul>
+
+  <div class="tab_content" id="your_places">
+    <div class="display-container">
+      <p> These are your hidden places: </p>
+      <table class="display-table">
+      <tr>
+        <th class="category_container">Category</th>
+        <th class="information_container">Information</th>
+        <th class="country_container">Country</th>
+      </tr>
+        <% @hidden_places.each do |hidden_place| %>
+          <tr class="table-content">
+            <td class="category_container">
+              <%= hidden_place.category.category_name %>
+            </td>
+            <td class="information_container">
+               <span class="title"><%= hidden_place.title %></span> </br>
+                <span> <%= hidden_place.description %> </span></br>
+                <span> <%= hidden_place.location.location_name %> </span></br>
+                <a href='<%= hidden_place.url %>'><%= hidden_place.url %></a></br>
+            </td>
+            <td class="country_container">
+              <%= hidden_place.location.country.country_name %>
+            </td>
+          </tr>
+        <%end%>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="tab_content" id="add_spot">
+    <div id="user_spots">
+    </div>
+
+  </div>
 </div>
+
+
+
