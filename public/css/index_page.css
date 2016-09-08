@@ -13,6 +13,11 @@
 
 .tab_content {
   display: none;
+  /*position: relative;*/
+}
+
+.tab_container {
+  position: relative;
 }
 
 .index_tabs {

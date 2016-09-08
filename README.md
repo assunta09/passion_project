@@ -9,10 +9,10 @@ Assuntas Passion Project
 4. Built all Models and Tables needed
 
 5. Find API
-http://www.programmableweb.com/apis/directory
+http://www.programmableweb.com/apis/directory - done
 
 6. Get the API to work:
-https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform
+https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform - done
 
 7. Style the website
 
