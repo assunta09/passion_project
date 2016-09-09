@@ -6,50 +6,42 @@
     <h2>Welcome <%= @user.name %></h2>
   </div>
 
-  <ul class="index_tabs">
-    <li class="active"><a href="#your_places">Your hidden places</a></li>
-    <li><a href="#add_spot">Add a new spot</a></li>
-  </ul>
-
-  <div class="tab_content" id="your_places">
-    <div class="display-container">
-      <p> These are your hidden places: </p>
-      <table class="display-table">
-      <tr>
-        <th class="category_container">Category</th>
-        <th class="information_container">Information</th>
-        <th class="country_container">Country</th>
-      </tr>
-        <% @hidden_places.each do |hidden_place| %>
-          <tr class="table-content">
-            <td class="category_container">
-              <%= hidden_place.category.category_name %>
-            </td>
-            <td class="information_container">
-               <span class="title"><%= hidden_place.title %></span> </br>
-                <span> <%= hidden_place.description %> </span></br>
-                <span> <%= hidden_place.location.location_name %> </span></br>
-                <a href='<%= hidden_place.url %>'><%= hidden_place.url %></a></br>
-            </td>
-            <td class="country_container">
-              <%= hidden_place.location.country.country_name %>
-            </td>
-          </tr>
-        <%end%>
-      </table>
-    </div>
+  <div class="tab_container">
+    <ul class="index_tabs">
+      <li class="active"><a href="#your_places">Your hidden places</a></li>
+      <li><a href="#add_spot">Add a new spot</a></li>
+    </ul>
   </div>
 
+  <div class="tab_content" id="your_places">
+    <table class="display-table">
+    <tr>
+      <th class="category_container">Category</th>
+      <th class="information_container">Information</th>
+      <th class="country_container">Country</th>
+    </tr>
+      <% @hidden_places.each do |hidden_place| %>
+        <tr class="table-content">
+          <td class="category_container">
+            <%= hidden_place.category.category_name %>
+          </td>
+          <td class="information_container">
+             <span class="title"><%= hidden_place.title %></span> </br>
+              <span> <%= hidden_place.description %> </span></br>
+              <span> <%= hidden_place.location.location_name %> </span></br>
+              <a href='<%= hidden_place.url %>'><%= hidden_place.url %></a></br>
+          </td>
+          <td class="country_container">
+            <%= hidden_place.location.country.country_name %>
+          </td>
+        </tr>
+      <%end%>
+    </table>
+  </div>
 
   <div class="tab_content" id="add_spot">
-    <div id="user_spots">
-    </div>
-
+    <div class="text-container-heading">API not working in Ajaxed form??<a href="/hidden_places/new"> Try here</a>
+    <div id="user_spots"></div>
   </div>
 </div>
 
-<!-- Include Google Maps JS API -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&amp;key=AIzaSyBP0OO_8dfKuhKGtRk_PVtBudd8ZG2qbpk "></script>
-
-<!-- Custom JS code to bind to Autocomplete API -->
-<script type="text/javascript" src="/js/autocomplete.js"></script>

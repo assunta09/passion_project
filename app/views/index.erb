@@ -8,44 +8,45 @@
 
   <div class="tab_container">
     <ul class="index_tabs">
-      <li class="active"><a href="#hidden_spot">Find a hidden spot</a></li>
-      <li><a href="#register">See your personal info</a></li>
+      <li class="active"><a href="#hidden_spot">Find a hidden place</a></li>
+      <li id="display_registration"><a href="#register">Your hidden places</a></li>
     </ul>
   </div>
 
   <div class="tab_content" id="hidden_spot">
-    <div>
-    <table class="display-table">
-    <tr><th class="category_container">Category</th>
-    <th class="information_container">Information</th>
-    <th class="country_container">Country</th>
-      <% @hidden_places.each do |hidden_place| %>
-        <tr class="table-content">
-          <td class="category_container">
-            <%= hidden_place.category.category_name %>
-          </td>
-          <td class="information_container">
+   <table class="display-table">
+     <tr>
+       <th class="category_container">Category</th>
+       <th class="information_container">Information</th>
+       <th class="country_container">Country</th>
+     </tr>
+       <% @hidden_places.each do |hidden_place| %>
+         <tr class="table-content">
+           <td class="category_container">
+             <%= hidden_place.category.category_name %>
+           </td>
+           <td class="information_container">
              <span class="title"><%= hidden_place.title %></span> </br>
-              <span> <%= hidden_place.description %> </span></br>
-              <span> <%= hidden_place.location.location_name %> </span></br>
-              <a href='<%= hidden_place.url %>'><%= hidden_place.url %></br>
-          </td>
-          <td class="country_container">
-            <%= hidden_place.location.country.country_name %>
-          </td>
-        </tr>
-      <%end%>
-    </table>
-    </div>
+             <span> <%= hidden_place.description %> </span></br>
+             <span> <%= hidden_place.location.location_name %> </span></br>
+             <a href='<%= hidden_place.url %>'><%= hidden_place.url %></br>
+           </td>
+           <td class="country_container">
+             <%= hidden_place.location.country.country_name %>
+           </td>
+         </tr>
+       <%end%>
+   </table>
   </div>
 
   <div class="tab_content" id="register">
-    <div id="user-container">
-
-
-    </div>
-
-
+  <% if current_user %>
+    <%= erb :'users/_display_table' %>
+  <% else %>
+    <div class="text-container-heading">Log-in to see your hidden places</div>
+    <div id="user-container"></div>
+    <div class="text-container register_link">Not a user yet? <a href="/users/new">Register</a></div>
+  <% end %>
   </div>
 
 </div>

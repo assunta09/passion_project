@@ -1,6 +1,15 @@
+before do
+  set_user
+end
+
+
 # Page to register new users
 get '/users/new' do
-	erb :'users/new'
+  if request.xhr?
+    erb :'users/_register', layout: false
+  else
+	 erb :'users/new'
+  end
 end
 
 # Create new user
@@ -19,9 +28,14 @@ end
 
 # Profile Page
 get '/users/:id' do
-  @user = User.find(params[:id])
   @hidden_places = HiddenPlace.joins(:users).where("users.id = ?", @user.id)
   erb :'users/show'
 end
 
 
+private
+  def set_user
+    if current_user
+      @user = User.find(session[:id])
+    end
+  end

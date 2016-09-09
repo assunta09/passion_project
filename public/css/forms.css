@@ -1,3 +1,24 @@
+/*This is the CSS for any of the forms and their containers*/
+
+#user_spots {
+  padding-top: 5%;
+}
+
+.text-container-heading {
+  /*padding-top: 10%;*/
+  text-align: center;
+}
+
+.text-container {
+  text-align: center;
+  padding-top: 10;
+  padding-bottom: 5%;
+}
+
+#user-container {
+  padding-top: 3%;
+}
+
 .form_container {
   margin: auto;
   width: 70%;

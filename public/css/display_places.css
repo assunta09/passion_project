@@ -1,15 +1,23 @@
+/*These are the table that holds the hidden places*/
+
+.tab_content {
+  padding-top: 10%;
+}
+
 .display-table {
-  padding-top: 40px;
+  padding-top: 10%;
 }
 
 .display-table th {
-  text-align: center
-  background-color: #d3d3d3;
+  text-align: center;
+  background-color: #002800;
+  color: #ffffff;
+/*  padding-top: 5%;*/
 }
 
 .category_container {
   padding: 20px;
-  width: 20%;
+  width: 25%;
   text-align: center
 }
 

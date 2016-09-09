@@ -1,11 +1,19 @@
 // Initializ autocomplete
-function initializeAutocomplete(id) {
-  var element = document.getElementById(id);
-  if (element) {
-    var autocomplete = new google.maps.places.Autocomplete(element, { types: [] });
-    google.maps.event.addListener(autocomplete, 'place_changed', getAddress);
+// function initializeAutocomplete(id) {
+//   var element = document.getElementById(id);
+//   if (element) {
+//     var autocomplete = new google.maps.places.Autocomplete(element, { types: [] });
+//     google.maps.event.addListener(autocomplete, 'place_changed', getAddress);
+//   }
+// }
+
+function init() {
+  var input = document.getElementById('user_input_autocomplete_address');
+  var autocomplete = new google.maps.places.Autocomplete(input);
+  google.maps.event.addListener(autocomplete, 'place_changed', getAddress);
   }
-}
+
+google.maps.event.addDomListener(window, 'load', init);
 
 var componentForm = {
   street_number: 'short_name',
@@ -18,6 +26,7 @@ var componentForm = {
 
 function getAddress() {
   var place = this.getPlace();
+  console.log(addressType);
   // var addressType = place.address_components[2].types[0];
   // console.log(place.address_components[2][componentForm[addressType]]);
   // $('input[name="hidden_place[address]"]').val(place.formatted_address)
@@ -35,9 +44,9 @@ function getAddress() {
 
 
 
-// Event listener starts up upon loading of image
-google.maps.event.addDomListener(window, 'load', function() {
-  initializeAutocomplete('user_input_autocomplete_address');
-});
+// // Event listener starts up upon loading of image
+// google.maps.event.addDomListener(window, 'load', function() {
+//   initializeAutocomplete('user_input_autocomplete_address');
+// });
 
 
