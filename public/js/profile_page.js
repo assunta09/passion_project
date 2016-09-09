@@ -29,13 +29,23 @@ function clickTab() {
   })
 }
 
+// function init() {
+//   var input = document.getElementById('user_input_autocomplete_address');
+//   var autocomplete = new google.maps.places.Autocomplete(input);
+//   google.maps.event.addListener(autocomplete, 'place_changed', getAddress);
+// }
+
+
 function personalTab() {
   $.ajax({
     url: '/hidden_places/new',
     method: 'GET'
   }).done(function(result){
+    // var formDiv = document.getElementById('add_new_place')
+    // console.log(formDiv)
     $("#user_spots").empty();
     $("#user_spots").append(result);
+    // google.maps.event.addDomListener(formDiv , 'load', init);
   })
 }
 
