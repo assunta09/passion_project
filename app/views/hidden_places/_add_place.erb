@@ -1,0 +1,38 @@
+<form id="add_new_place" class="form_container" action='/hidden_places' method="POST">
+    <div class="form_entries">
+     <label class="label-container">Title of your hidden place</label>
+     <input type="text" name="hidden_place[title]">
+    </div>
+
+    <div class="form_entries">
+     <label class="label-container">Why is this place special?</label>
+     <input type="text" name="hidden_place[description]"></br></br>
+    </div>
+
+    <div class="form_entries">
+     <label class="label-container">URL (if available)</label>
+     <input type="text" name="hidden_place[url]"></br></br>
+    </div>
+
+    <div class="form_entries">
+      <label class="label-container">Address of the place</label>
+      <input type="text" id="user_input_autocomplete_address" name="location[location_name]">
+    </div>
+
+    <div class="form_entries">
+      <label>Please select a category</label>
+        <select class="drop-down" name="hidden_place[category_id]">
+          <% @categories.each do |category| %>
+            <option value='<%=category.id %>'> <%= category.category_name %></option>
+          <% end %>
+        </select>
+    </div>
+
+    <div class="submit-button">
+      <input type="submit" name="Add to travel log"></br></br>
+    </div>
+</form>
+
+
+
+

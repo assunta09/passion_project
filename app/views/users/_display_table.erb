@@ -1,0 +1,23 @@
+<table class="display-table">
+  <tr>
+    <th class="category_container">Category</th>
+    <th class="information_container">Information</th>
+    <th class="country_container">Country</th>
+  </tr>
+    <% @hidden_places_user.each do |hidden_place_user| %>
+      <tr class="table-content">
+        <td class="category_container">
+          <%= hidden_place_user.category.category_name %>
+        </td>
+        <td class="information_container">
+           <span class="title"><%= hidden_place_user.title %></span> </br>
+            <span> <%= hidden_place_user.description %> </span></br>
+            <span> <%= hidden_place_user.location.location_name %> </span></br>
+            <a href='<%= hidden_place_user.url %>'><%= hidden_place_user.url %></a></br>
+        </td>
+        <td class="country_container">
+          <%= hidden_place_user.location.country.country_name %>
+        </td>
+      </tr>
+    <%end%>
+</table>

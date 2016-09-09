@@ -14,6 +14,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'dotenv'
+
 group :test do
   gem 'shoulda-matchers'
   gem 'rack-test'
@@ -25,3 +27,8 @@ group :test, :development do
   gem 'factory_girl'
   gem 'faker'
 end
+
+#Bcrypt
+gem 'bcrypt'
+
+
