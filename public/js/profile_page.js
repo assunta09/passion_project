@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('div.tab_content#your_places').show();
   //When somebody clicks on the tab (they are not clicking on the li they are
   // clicking on the a)
-
+  $('#profile_link').hide();
 
   $( "#user_spots" ).on( "ready", "form", function( event ) {
     console.log("Whatever")

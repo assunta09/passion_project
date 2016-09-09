@@ -1,16 +1,3 @@
-/*.header_picture {
-
-}
-
-.header_picture img {
-  width: 30%;
-  height: auto;
-  padding: 0, 10px, 0, 10px;
-  margin: 0 auto;
-  display: block;
-  overflow: hidden;
-}*/
-
 .tab_content {
   display: none;
   /*position: relative;*/
