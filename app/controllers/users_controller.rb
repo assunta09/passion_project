@@ -28,6 +28,7 @@ end
 
 # Profile Page
 get '/users/:id' do
+  @api_key = ENV['PLACES_API']
   @hidden_places = HiddenPlace.joins(:users).where("users.id = ?", @user.id)
   erb :'users/show'
 end
