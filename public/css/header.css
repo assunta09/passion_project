@@ -46,6 +46,20 @@ header li a {
   border: none;
 }
 
+#home {
+  display: flex;
+  float: left;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+#home_link {
+  text-decoration: none;
+  display: flex;
+  float: left;
+  color: #fffff7;
+}
+
 
 
 
