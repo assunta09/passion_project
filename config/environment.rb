@@ -23,6 +23,7 @@ require 'erb'
 require 'dotenv'
 # require 'dotenv' if File.exists?('.env')
 
+
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
 

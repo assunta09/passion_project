@@ -30,3 +30,5 @@ end
 
 #Bcrypt
 gem 'bcrypt'
+
+
