@@ -4,6 +4,9 @@ get '/hidden_places/new' do
     if request.xhr?
       erb :'hidden_places/_add_place', layout: false
     else
+      p "*" * 30
+      p @api_key = ENV['PLACES_API']
+      p "*" * 30
       erb :'hidden_places/new'
     end
   else
